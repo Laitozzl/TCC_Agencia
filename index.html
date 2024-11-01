@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Viva</title>
+    <!--SwiperCss-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="empresa">
+                <h1>VIVA</h1>
+            </div>
+        </nav>
+    </header>
+    <div class="page">
+    <section class="wrapper">
+        <i class="fa-solid fa-arrow-left button" id="prev"></i>
+        <div class="image-container">
+          <div class="carousel">
+            <img src="../images/sobre.png"/>
+            <img src="../images/banner2.png"/>
+            <img src="../images/bannrer3.png"/>
+          </div>
+          <i class="fa-solid fa-arrow-right button" id="next"></i>
+        </div>
+      </section>
+    </div>
+    <div class="title">
+      <h1>O Que Fazemos Pela Sua Empresa:</h1> <br> <br><br>
+      </div>
+      <div class="page2">
+      <section class="slider swiper mySwiper">
+        <div class="image-slider swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="../images/website.png" class="fazer"/>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="../images/rebranding.png" class="fazer"/>
+        </div>
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+      </section>
+ <!--Swiper JS-->
+      <script src="../js/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      </div>
+      <div>
+        <main class="rodape"></main>
+        
+        <footer>
+            <div id="footer_content">
+                <center><div id="footer_contacts">
+                    <img src="../images/Logo.png" class="logo" alt="">
+        
+        
+        
+                </div> </center>
+        
+                <div id="footer_social_media">
+                    <h1>Contatos:</h1>
+                    <div id="contatos">
+                    <a href="https://mail.google.com/mail/u/0/#drafts?compose=XBcJlKvMPpFfrGDbmwggNrrsLXLqRlzRkLLCGQClGTcnwJbwSKZTfctJhPXXnCsHHfFqJhSxRWnrWwmb" class="footer-link" id="envelope" >
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+        
+                    <a href="https://www.instagram.com" class="footer-link" id="instagram" >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    </div>
+        
+                </div>
+        
+        
+        
+                <div id="footer_subscribe">
+                    <h3>Fale Conosco</h3>
+        
+                    <p>
+                        Deixe alguma sugestão para
+                        nossa equipe.
+                    </p>
+        
+                    <form>
+                        <div id="input_group">
+                            <input type="text" class="email">
+                            <button>
+                                <i class="fa-regular fa-envelope"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+            <div id="footer_copyright">
+                &#169
+                2024 Agência Viva
+            </div>
+        </footer>
+</body>
+</html>
