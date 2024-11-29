@@ -149,6 +149,16 @@ h1{
     background-color: #ff7f50;
   }
 
+  @media screen and (max-width: 800px){
+    .nav-btn{
+        visibility: hidden;
+    }
+
+    .swiper-pagination-bullet{
+        visibility: visible;
+    }
+  }
+
 
 /*footer css*/
 
@@ -317,10 +327,15 @@ footer {
 
 
 @media screen and (max-width:768px){
-  nav.btn {
+   .nav-btn{
     visibility: hidden;
   }
   .swiper-pagination-bullet{
     visibility: visible;
   }
+}
+
+
+.responsivo{
+  display:none;
 }
